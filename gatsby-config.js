@@ -1,6 +1,36 @@
 module.exports = {
   siteMetadata: {
     title: `Cache Valley Nursery`,
+    menuLinks:[
+      {
+        name: `home`,
+        link: `/`
+      },
+      {
+        name: `about`,
+        link: `/about`
+      },
+      {
+        name: `trees`,
+        link: `/trees`
+      },
+      {
+        name: `shrubs`,
+        link: `/shrubs`
+      },
+      {
+        name: `perennials`,
+        link: `/perennials`
+      },
+      {
+        name: `grasses`,
+        link: `/grasses`
+      },
+      {
+        name: `contact`,
+        link: `/contact`
+      }
+    ],
     description: `Cache Valley Nursery is Northern Utah’s newest source for ornamental trees, shrubs, and perennials. We offer more than 200 varieties, specializing in unusual, hard-to-find, and native selections.`,
     author: `@jimbler`,
   },
