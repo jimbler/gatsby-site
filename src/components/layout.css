@@ -654,16 +654,53 @@ header, footer, .page {
   margin-right: auto;
 }
 
-.header-div {
+.header-image {
+  width: 30%;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-image > .gatsby-image-wrapper {
+  flex: 1;
 }
 
 .page {
   padding: 2%;
   min-height: 30em;
+  background-color: white;
 }
 
 .nav-bar {
   display: flex;
   flex: 1;
   background-color: black;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 450px) {
+  .nav-bar > button {
+    width: 100%;
+  }
+} 
+
+.nav-bar > .nav-item {
+  background: transparent;
+  border: none;
+  padding: 8px;
+  transition: all .2s ease-in-out;
+  color: white;
+}
+
+.nav-bar > .nav-item > a {
+  color: white;
+}
+
+.nav-bar > .nav-item:hover {
+  transform: scale(1.1);
+}
+
+.nav-bar > button > a {
+  text-decoration: none;
 }

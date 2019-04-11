@@ -25,11 +25,14 @@ const Layout = ({ children }) => (
             }
           }
         }
+        trans: file(relativePath: { eq: "Logo_Stamp_Semi_Transparent.png" }) {
+          ...fluidImage
+        }
       }
     `}
     render={data => (
       <>
-        <Header menuLinks={data.site.siteMetadata.menuLinks} siteTitle={data.site.siteMetadata.title} />
+        <Header menuLinks={data.site.siteMetadata.menuLinks} siteTitle={data.site.siteMetadata.title} image={data.trans.childImageSharp.fluid} />
         <div className="page">
           <main>{children}</main>
         </div>
